@@ -1,0 +1,678 @@
+@font-face {
+	font-family: 'Circe Bold';
+	src: url('../fonts/circe_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/circe_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/circe_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/circe_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/circe_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/circe_bold.svg#circe_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Circe Light';
+	src: url('../fonts/circe_light.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/circe_light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/circe_light.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/circe_light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/circe_light.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/circe_light.svg#circe_light') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+body{
+    font-family: "circle";
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding-top: 20px;
+}
+.fix-container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+/* header-contacts-start */
+#header-contacts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+#header__name{
+    font-family: 'Circe Bold';
+    font-size: 14px;
+    line-height: 19.6px;
+    letter-spacing: 2%;
+    color: #EC1B2E;
+}
+
+#header-position{
+    display: flex;
+}
+.header-contact__img{
+    display: flex;
+    gap: 45px;
+    padding-left: 30px;
+   width: 250px;
+}
+.header-contact__text{
+   font-size: 14px;
+   line-height: 19.6px;
+}
+
+#header-appointment__button button{
+    width: 143px;
+    height: 40px;
+    background-color: #EC1B2E;
+    color: #fff;
+    font-family: "Circe Bold";
+    font-size: 14px;
+    line-height: 19.6px;
+}
+/* header-contacts-end */
+
+/* header-logo-menu-start */
+#header-logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+#nav{
+    display: flex;
+    align-items: center;
+}
+.list-nav {
+   list-style: none;
+   margin-right: 20px;
+   text-transform: uppercase;
+   font-size: 14px;
+   font-family: "Circe Bold";
+   
+}
+nav :last-child{
+  margin-right: 0;
+}
+
+.list-nav a{
+    text-decoration: none;
+    color: #333;
+}
+
+.list-nav:hover{
+   opacity: 0.7;
+    transition: 1.2s;
+    font-size: 16px;
+}
+
+
+#header-appointment__button:hover{
+    opacity: .7;
+    transition: 1.2s;
+}
+/* header-logo-menu-end */
+
+/* container-info start */
+#main-background{
+    background-image: url(../image/Rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    margin-bottom: 120px;
+}
+.erow{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 300px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.erow-right{
+    width: 70px;
+    height: 70px;
+    background-color: #EC1B2E;
+    gap: 10px;
+    padding: 20px;
+    z-index: 1;
+}
+.erow-right:hover{
+    opacity: .8;
+    transition: 1.2s;
+}
+
+.erow-left{
+    width: 70px;
+    height: 70px;
+    background-color: #EC1B2E;
+    gap: 10px;
+    padding: 20px;
+    rotate: 180deg;
+}
+.erow-left:hover{
+    opacity: .8;
+    transition: 1.2s;
+}
+
+#container-info{
+    position: absolute;
+    top: 306px;
+    left: 420px;
+    height: 412px;
+    width: 586px;
+    gap: 10px;
+    
+}
+#opacity-container{
+    background-color:#33333360;
+    gap: 10px;
+    height: 310px;
+    width: 586px;
+}
+#container-info__text{
+    font-weight: 800;
+    font-family: "Circe Bold";
+    font-size: 40px;
+    line-height: 56px;
+    color: #fff;
+    text-align: left;
+    padding-left: 20px;   
+}
+
+#container-info__button{
+  padding-top: 30px;
+  gap: 10px;
+  width: 163px;
+  height: 58px;
+}
+#container-info__button button{
+  width: 163px;
+  height: 58px;
+  background-color: #EC1B2E;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  font-family:"Circe";
+}
+#container-info__button :hover{
+    opacity: .7;
+    transition: 1.2s;
+}
+/* /* container-info end */
+
+/* shool-lavita start */
+#shool-lavita-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+#shool-lavita-container__left{
+    width: 638px;
+    border: 10px solid #EC1B2E;
+    margin-bottom: 120px;
+}
+
+#shool-lavita__glav{
+    width: 354px;
+    height: 67px;
+    background-color: #fff;
+    top: -20px;
+    left: 50px;
+    position: absolute;
+    text-align: center;
+}
+
+#shool-lavita__text{
+   padding-top: 50px;
+   padding-left: 90px;
+   width: 457px;
+   font-family: "Circe";
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 25.2px;
+}
+/* shool-lavita end */
+
+/* section-curse start */
+#curse-glav{
+    font-family: Circe;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 67px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.curse-semester{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.semester button{
+   width: 175px;
+   height: 68px;
+   gap: 10px;
+   background-color: #EC1B2E;
+   color: #fff;
+   font-family: "Circe";
+   font-size: 16px;
+   line-height: 22.4px;
+   align-items: center;
+   margin-right: 339px;
+   margin-left: 60px;
+   margin-bottom: 40px;
+}
+
+.semester :hover{
+    opacity: .7;
+    transition: 1.2s;
+}
+/* section-curse end */
+/* section-individual-curse start */
+.individual-curse{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.individual-curse a{
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Circe";
+    line-height: 33.6px;
+    text-align: center;
+}
+
+.individual-curse span{
+    color: #EC1B2E;
+}
+
+.individual-curse :hover{
+    font-size: 26px;
+    transition: 1.2s;
+    color: #EC1B2E;
+}
+
+/* section-individual-curse end */
+/* table start */
+.table{
+    width: 100%;
+    margin-bottom: 60px;
+}
+.one-table{
+    background-color: #33333310;
+    width: 100%;
+    color: #333;
+    font-weight: 700;
+    font-family: "Circe";   
+    font-size: 20px;
+    line-height: 28px;
+}
+.table-group-glav{
+    width: 180px;
+    padding: 20px;
+   
+}
+.table-intensiv-glav{
+    width: 300px;
+    padding: 20px;
+   
+}
+.table-prise-glav{
+   width: 596px; 
+   padding: 20px;
+  
+}
+
+.table-group{
+    width: 180px;
+    padding: 20px;
+    border-bottom: 1px solid #33333320;
+}
+
+.table-group-end{
+    width: 180px;
+    padding: 20px;
+    
+}
+
+.table-intensiv{
+    width: 300px;
+    padding: 20px;
+    border-bottom: 1px solid #33333320;
+}
+.table-intensiv-end{
+    width: 300px;
+    padding: 20px;
+    
+}
+
+.table-prise{
+   width: 596px; 
+   padding: 20px;
+   border-bottom: 1px solid #33333320;
+}
+.table-prise-end {
+    width: 596px; 
+    padding: 20px;
+}
+
+.table-prise span{
+    background-color: #EC1B2E;
+    color: #fff;
+}
+
+.table-prise-end span{
+    background-color: #EC1B2E;
+    color: #fff;
+}
+
+ /* table end */
+
+ /* section-examens start */
+ .section-examens{
+    margin-bottom: 80px;
+ }
+ #examens-glav{
+    font-family: "Circe";
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 67.2px;
+    letter-spacing: 1%;
+    text-align: center;
+ }
+
+ #examens-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ .examen-list__item{
+    max-width: 310px;
+    margin-top: 60px;
+ }
+ .list-item-info__glav{
+    font-family: "Circle";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 33.6px;
+    align-items: center;
+    padding-bottom: 20px;
+ }
+
+ .list-item-info__text{
+    font-weight: 400;
+    font-family: "Circe";
+    font-size: 16px;
+    line-height: 22.4px;
+ }
+
+ .list-item-info__text li{
+    padding-bottom: 10px;
+ }
+ .list-item-button{
+    margin-top: 20px;
+    margin-left: 50px;
+ }
+ .list-item-button button{
+    width: 163px;
+    height: 58px;
+    font-size: 20px;
+    font-family: "Circe";
+    font-weight: 700;
+    background-color: #EC1B2E;
+    color: #fff;
+ }
+
+ .list-item-button :hover{
+    opacity: .7;
+    transition: 1.2s;
+ }
+/* section-examens end */
+/* section-event start */
+#section-events-shool{
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#section-event-shool__glav{
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Circe';
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 67.2px;
+    letter-spacing: 1%;
+    color: #333;
+}
+.events-shool{
+    width: 416px;
+    margin-bottom: 60px;
+}
+
+.event-shool__image{
+    margin-bottom: 20px;
+}
+
+.event-shool__glav{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Circe';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33.6px;
+}
+
+.event-shool__text{
+    font-family: 'Circe';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    margin-bottom: 20px;
+}
+
+
+.event-shool-button button{
+    color: #fff;
+    width: 163px;
+    height: 58px;
+    background-color: #EC1B2E;
+    gap: 10px;
+}
+
+.event-shool-button :hover{
+    opacity: .7;
+    transition: 1.2s;
+}
+/* section-event end */
+/* shool-news start */
+#shool-news{
+    margin-bottom: 60px;
+}
+
+.shool-news__items{
+    font-family: "Circe";
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 67.2px;
+    letter-spacing: 1%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#shool-news__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.shool-news__column{
+    width: 306px;
+}
+
+.shool-news__glav{
+    font-family: "Circe";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33.6px;
+    margin-bottom: 20px;
+}
+
+.shool-news__button{
+    margin-top: 30px;
+}
+
+.shool-news__button button{
+    width: 163px;
+    height: 58px;
+    gap: 10px;
+    background-color: #EC1B2E;
+    color: #fff;
+    font-size: 20px;
+    font-family: "circe";
+    font-weight: 700;
+    line-height: 28px;
+}
+/* shool-news end */
+/* footer start */
+.footer{
+    background-color: #33333310;
+}
+#footer-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+#footer-column__social{
+    width: 240px;
+}
+
+#footer-social__glav{
+    margin-bottom: 30px;
+    font-family: "Circe";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.6px;
+    letter-spacing: 2%;
+}
+
+.footer__image{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.footer-text{
+    padding-left: 15px;
+}
+
+.social-net{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#footer-info__about{
+    width: 200px;
+}
+.footer-about__glav{
+    font-family: "Circe";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.footer-about__text{
+    font-family: "circe";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.6px;
+    margin-bottom: 20px;
+}
+
+.footer-about__text ul{
+    list-style: none;
+}
+
+.info-prise__glav{
+    font-family: "Circe";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info-prise-text{
+    font-family: "Circe";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    color: #333;
+    padding-bottom: 20px;
+}
+
+.info-prise-text p{
+    padding-bottom: 10px;
+}
+
+.info-prise__china{
+    font-family: "Circe";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.info-china__text{
+    font-family: "Circe";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    color: #333;
+    padding-bottom: 20px;
+}
+.info-china__text p{
+    padding-bottom: 10px;
+}
+#footer-info__examen{
+    width: 200px;
+}
+
+.examen-glav{
+    font-weight: 700;
+    font-family: "Circe";
+    font-size: 20px;
+    line-height: 28px;
+    color: #333;
+    padding-bottom: 20px;
+}
+
+.footer-examen__text{
+    font-family: "Circe";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.6px;
+    color: #333;
+}
+.footer-examen__text ul{
+    list-style: none;
+}
+
+.footer-examen__text li{
+    padding-top: 10px;
+}
+/* footer end */
+
